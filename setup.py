@@ -6,7 +6,7 @@ with open("requirements.txt", "r") as fh:
     requirements = [line.strip() for line in fh]
 
 setuptools.setup(
-    name="telo-permutations",
+    name="permutations-finder",
     version="1.0",
     author="Kristina Buss",
     author_email="kristina.buss@asu.edu",
