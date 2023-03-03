@@ -1,3 +1,9 @@
+## dependencies and installation
+You can use the environment.yml file included here to make a conda environment with all the required dependencies, and then download all the scripts into a single folder for use.
+```
+conda env create -n pol3-env -f environment.yml
+```
+
 ## simple pipeline
 The most basic way to run this workflow is as a series of Python scripts.
 
