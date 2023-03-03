@@ -22,8 +22,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpForm
                                       filters.txt:
                                         AAAAAAAAAAAAAAAAAAAA
 
-                                      filterAndDemux.py reads.fastq -b barcodes.csv -f filters.txt \
-                                                        -o output -e 2 -s fastq
+                                      filterAndDemux.py reads.fastq -b barcodes.csv -f filters.txt -o output -e 2 -s fastq
                                     '''))
 
 parser.add_argument("input", type=str,
