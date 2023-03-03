@@ -13,10 +13,17 @@ import textwrap
 parser = argparse.ArgumentParser()
 
 parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpFormatter,
-                                 usage = "filterAndDemux.py input ",
+                                 usage = "filterAndDemux.py input -b barcodes.csv -f filters.txt",
                                  description = textwrap.dedent('''\
                                     Example:
+                                      barcodes.csv:
+                                        Sample,AAGAAAGTTGTCGGTGTCTTTGTG
+                                        Control,GAGTCTTGTGTCCCAGTTACCAGG
+                                      filters.txt:
+                                        AAAAAAAAAAAAAAAAAAAA
 
+                                      filterAndDemux.py reads.fastq -b barcodes.csv -f filters.txt \
+                                                        -o output -e 2 -s fastq
                                     '''))
 
 parser.add_argument("input", type=str,
