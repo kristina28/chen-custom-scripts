@@ -41,9 +41,8 @@ hist, bin_edges = np.histogram(lengths)
 print(hist)
 print(bin_edges)
 
-plt.hist(hist, bins=bin_edges, log=True)
-#lengths.plot.hist(grid=True, bins="auto", rwidth=0.9,
-#                   color='#607c8e')
+plt.hist(lengths, bins=len(hist))
+plt.yscale('log', nonpositive='clip')
 plt.title('Histogram of Insert Lengths for ' + args.outputPrefix)
 plt.xlabel('Insert Length')
 plt.ylabel('Number of Reads')
