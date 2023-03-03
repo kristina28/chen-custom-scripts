@@ -131,8 +131,9 @@ At this point you can rerun the length analysis on the normalized fasta if you w
 If you're using the ASU slurm-based supercomputer cluster, either Agave or Sol, you can call the full-workflow.sh script and steps 1-4 above will run automatically for you. You will still need to go through step 5 manually.
 
 An example:
-
+```
 ./full-workflow.sh --input fastq_runid_6a85d64cdc1a33f7d9cd2ae8e7fb80b3f63ad0ed_cat.fastq \
                    --barcodes barcodes.txt --filters polya.txt --seqtype fastq \
                    --output fn --reference /data/biocore/reference_genomes/cyanidioschyzon_merolae \
                    --database c_merolae --adaptors ACTTGCCTGTCGCTCTATCTTC,TTTCTGTTGGTGCTGATATTGC
+```
