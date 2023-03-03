@@ -20,6 +20,7 @@ parser = argparse.ArgumentParser(formatter_class=argparse.RawDescriptionHelpForm
 
                                     both adaptor strings should be in 5' to 3' orientation.
                                     If not specified, the sequences above are the defaults.
+                                    In the case of a barcoded adaptor, use the sequence between the barcode and insert.
                                     '''))
 
 parser.add_argument("readsFile", type=str,
